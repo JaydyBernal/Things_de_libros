@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.contendor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: mediumorchid;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 600px;
+    background: #654ea3;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, hsla(335, 58%, 80%, 0.678), hwb(256 31% 36% / 0.61)), url(../img/p2.png);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, hsla(335, 58%, 80%, 0.678), hwb(256 31% 36% / 0.61)), url(../img/p2.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #f6e1fd;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textosheader{
+display: flex;
+height: 430px;
+width: 100%;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.textosheader h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textosheader h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.contenedor-quienes-somos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-who-us{
+    width: 48%;
+}
+
+.contenedor-quienes-somos .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #b156cc;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 7px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.msj{
+    color: #850a7e;
+}
+
+/*Galeria de reseñas*/
+.reseñas {
+    background: #f2f2f2;
+}
+
+.galeria-reseñas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-reseñas{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, g0, 0, 0.5);
+} 
+
+.imagen-reseñas > img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    transform: scale(0);
+    background: #ffcbf6;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #f2f2f2;
+}
+
+.imagen-reseñas:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* citas de libros */
+
+.citas{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 100px;
+    
+    
+}
+
+.citas .cita{
+    background: #850a7e;
+    display: flex;
+    width: 55%;
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.citas .cita img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #b156cc;
+    border-radius: 0;
+    display: block;
+    
+}
+
+.carrusel{
+    border: 1px solid  purple;
+    height: 20px;
+    position: relative;
+}
+
+.tarjetas-carrusel{
+    
+    height: 100%;
+}
+.flechas-carrusel{
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+}
+
+#contenedor-carrusel{
+     border: 5px solid blueviolet;
+     height: 200px;
+     overflow: hidden;
+}
+
+#tarj-carrusel-1{
+    background-color: #654ea3 ;
+}
